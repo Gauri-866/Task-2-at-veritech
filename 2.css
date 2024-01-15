@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(35, 156, 243);
+}
+
+body {
+    background-color: black ;
+    font-family: 'Roboto', sans-serif;
+}
+
+.year {
+    color: white;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+header::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    height: 5px;
+    width: 400px;
+    background: linear-gradient(90deg, var(--primary), transparent);
+}
+
+.logo {
+    font-size: 60px;
+    color: #ffffff;
+    transform: 0.5s;
+
+}
+
+.logo img {
+    max-width: 200px;
+    filter: invert(1);
+    margin-left: 500px;
+}
+
+header .menu {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    background: url('menu-3-fill.png') no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+header .menu.active {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    background: url('close-line.png') no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.content h1 {
+    color: #ffffff;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 6em;
+    font-weight: 500;
+    line-height: 5em;
+    letter-spacing: 8px;
+    display: inline;
+    padding: 100px;
+
+}
+.model1 {
+    margin-top: 300px;
+    top: 300px;
+    margin-bottom: 100%;
+    font-weight: 500;
+    font-size: 3em;
+    letter-spacing: 8px;
+    display: inline;
+}
+.para{
+    color: #00ffff;
+    font-size: 2em;
+    letter-spacing: 2px;
+    bottom: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    flex-grow: var(--primary);
+    font-weight: bolder;
+    display: block;
+}
+source {
+    height:  100%;
+    width:100%;
+    left: 500px;
+    padding: 200px;
+    display: block;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    pointer-events: none;
+}
